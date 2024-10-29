@@ -28,9 +28,10 @@ namespace Biblioteca
             Adresa = adresa;
         }
 
-        public ElemList<Membru, bool> AdaugaMembru(ElemList<Membru, bool> membru)
+        public bool AdaugaMembru(Membru membru)
         {
-
+            Biblioteca.biblioteca.Membrii.Add(membru);
+            return true;
         }
     }
 }

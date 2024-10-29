@@ -35,5 +35,11 @@ namespace Biblioteca
 
         public DateTime ImprumutataPanaLa
         { get; set; }
+
+        public bool AdaugaCarte(Carte carte)
+        {
+            Biblioteca.biblioteca.Carti.Add(carte);
+            return true;
+        }
     }
 }

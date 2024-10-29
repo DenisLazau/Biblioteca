@@ -8,17 +8,17 @@ namespace Biblioteca
 {
     public class Biblioteca
     {
+        public static Biblioteca biblioteca = new Biblioteca(new List<Membru>(), new List<Carte>());
         public Biblioteca(List<Membru> membrii, List<Carte> carte)
         {
             Membrii = membrii;
-            Carte = carte;
+            Carti = carte;
         }
 
         public List<Membru> Membrii
         { get; set; }
 
-        public List<Carte> Carte
+        public List<Carte> Carti
         { get; set; }
-
     }
 }
