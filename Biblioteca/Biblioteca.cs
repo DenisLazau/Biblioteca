@@ -8,17 +8,28 @@ namespace Biblioteca
 {
     public class Biblioteca
     {
-        public static Biblioteca biblioteca = new Biblioteca(new List<Membru>(), new List<Carte>());
-        public Biblioteca(List<Membru> membrii, List<Carte> carte)
+        public Biblioteca()
         {
-            Membrii = membrii;
-            Carti = carte;
+            Catalog.Instance();
+            ListaMembri.Instance();
         }
 
-        public List<Membru> Membrii
-        { get; set; }
+        public bool AdaugaCarte(string titlu, string autor)
+        {
+            Guid id = Guid.NewGuid();
+            
+            Carte carte = new Carte(id, titlu, autor, null, false, null);
+            Catalog.AdaugaCarte(carte);
+            return true;
+        }
 
-        public List<Carte> Carti
-        { get; set; }
+        public bool AdaugaMembru(string nume, string telefon, string adresa)
+        {
+            Guid id = Guid.NewGuid();
+
+            Membru membru = new Membru(id, nume,telefon, adresa);
+            ListaMembri.AdaugaMembru(membru);
+            return true;
+        }
     }
 }

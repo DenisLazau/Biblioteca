@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    public class Membru
+    public class Membru: ICompare<K>
     {
-        public int Id
+        public Guid Id
         { get; set; }
 
         public string Nume
@@ -20,7 +20,7 @@ namespace Biblioteca
         public string Adresa
         { get; set; }
 
-        public Membru(int id, string nume, string telefon, string adresa)
+        public Membru(Guid id, string nume, string telefon, string adresa)
         {
             Id = id;
             Nume = nume;
@@ -28,10 +28,9 @@ namespace Biblioteca
             Adresa = adresa;
         }
 
-        public bool AdaugaMembru(Membru membru)
+        public bool Compara(K id)
         {
-            Biblioteca.biblioteca.Membrii.Add(membru);
-            return true;
+            throw new NotImplementedException();
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Biblioteca
 {
     public class Carte
     {
-        public Carte(int id, string titlu, string autor, int? idMembru, bool imprumutata, DateTime imprumutataPanaLa)
+        public Carte(Guid id, string titlu, string autor, int? idMembru, bool imprumutata, DateTime? imprumutataPanaLa)
         {
             Id = id;
             Titlu = titlu;
@@ -18,7 +18,7 @@ namespace Biblioteca
             ImprumutataPanaLa = imprumutataPanaLa;
         }
 
-        public int Id
+        public Guid Id
         { get; set; }
 
         public string Titlu
@@ -33,13 +33,7 @@ namespace Biblioteca
         public bool Imprumutata
         { get; set; }
 
-        public DateTime ImprumutataPanaLa
+        public DateTime? ImprumutataPanaLa
         { get; set; }
-
-        public bool AdaugaCarte(Carte carte)
-        {
-            Biblioteca.biblioteca.Carti.Add(carte);
-            return true;
-        }
     }
 }
