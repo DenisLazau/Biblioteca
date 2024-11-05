@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    public class Carte
+    public class Carte : ICompare<Guid>
     {
         public Carte(Guid id, string titlu, string autor, int? idMembru, bool imprumutata, DateTime? imprumutataPanaLa)
         {
@@ -35,5 +35,10 @@ namespace Biblioteca
 
         public DateTime? ImprumutataPanaLa
         { get; set; }
+
+        public bool Compara(Guid id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    public class ElemList<T, K> : ICompare<K>
+    public class ElemList<T, K> where T : ICompare<K>
     {
-        bool ICompare<K>.Compara(K id)
+        public List<T> lista;
+
+        public ElemList(List<T> lista)
         {
-            return true;
+            this.lista = lista;
+        }
+
+        public void Adauga(T item)
+        {
+            lista.Add(item);
         }
     }
 }
