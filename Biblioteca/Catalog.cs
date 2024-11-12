@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    public class Catalog: ElemList<Carte, Guid>
+    public class Catalog: ElemList<AbstractElem, Guid>
     {
         private static Catalog singleton;
 
         private Catalog()
         {
-            lista = new List<Carte>(0);
         }
 
         public static Catalog Instance()
@@ -24,9 +23,9 @@ namespace Biblioteca
             return singleton;
         }
 
-        public static void AdaugaCarte(Carte carte)
+        public void AdaugaCarte(AbstractElem carte)
         {
-            ElemList<>.Adauga(carte);
+            Adauga(carte);
         }
 
 

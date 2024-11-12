@@ -8,18 +8,21 @@ namespace Biblioteca
 {
     public class Biblioteca
     {
+        Catalog catalog;
+        AbstractElemFactory abstractElemFactory;
         public Biblioteca()
         {
-            Catalog.Instance();
+            catalog = Catalog.Instance();
+            abstractElemFactory = AbstractElemFactory.Instance();
             ListaMembri.Instance();
         }
 
-        public bool AdaugaCarte(string titlu, string autor)
+        public bool AdaugaCarte(ParamFactory param)
         {
             Guid id = Guid.NewGuid();
-            
-            Carte carte = new Carte(id, titlu, autor, null, false, null);
-            Catalog.AdaugaCarte(carte);
+
+            AbstractElem elem = abstractElemFactory.CreeazaElementConcret(param);
+            catalog.AdaugaCarte(elem);
             return true;
         }
 
@@ -27,7 +30,7 @@ namespace Biblioteca
         {
             Guid id = Guid.NewGuid();
 
-            Membru membru = new Membru(id, nume,telefon, adresa);
+            Membru membru = new Membru(id, nume, telefon, adresa);
             ListaMembri.AdaugaMembru(membru);
             return true;
         }

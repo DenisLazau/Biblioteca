@@ -10,9 +10,8 @@ namespace Biblioteca
     {
         public List<T> lista;
 
-        public ElemList(List<T> lista)
+        public ElemList()
         {
-            this.lista = lista;
         }
 
         public void Adauga(T item)
