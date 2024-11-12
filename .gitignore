@@ -403,3 +403,15 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/Biblioteca/obj/project.nuget.cache
+/Biblioteca/obj/Debug/net6.0/Biblioteca.AssemblyInfoInputs.cache
+/.vs/slnx.sqlite
+/.vs/Biblioteca/v17/.suo
+/.vs/Biblioteca/v17/DocumentLayout.json
+/.vs/Biblioteca/v17/.wsuo
+/Biblioteca/obj/Debug/net6.0/Biblioteca.assets.cache
+/Biblioteca/obj/Biblioteca.csproj.nuget.dgspec.json
+/Biblioteca/obj/Biblioteca.csproj.nuget.g.props
+/Biblioteca/obj/project.assets.json
+/Biblioteca/obj/Debug/net6.0/Biblioteca.csproj.AssemblyReference.cache
+/.vs/VSWorkspaceState.json
