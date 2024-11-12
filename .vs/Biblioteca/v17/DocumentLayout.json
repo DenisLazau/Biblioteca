@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\denis\\source\\repos\\Biblioteca\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D832D0-39DD-400F-BD9E-4175ADD27F5D}|Biblioteca\\Biblioteca.csproj|c:\\users\\denis\\source\\repos\\biblioteca\\biblioteca\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C0D832D0-39DD-400F-BD9E-4175ADD27F5D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D832D0-39DD-400F-BD9E-4175ADD27F5D}|Biblioteca\\Biblioteca.csproj|c:\\users\\denis\\source\\repos\\biblioteca\\biblioteca\\listamembri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0D832D0-39DD-400F-BD9E-4175ADD27F5D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\listamembri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D832D0-39DD-400F-BD9E-4175ADD27F5D}|Biblioteca\\Biblioteca.csproj|c:\\users\\denis\\source\\repos\\biblioteca\\biblioteca\\icompare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0D832D0-39DD-400F-BD9E-4175ADD27F5D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\icompare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0D832D0-39DD-400F-BD9E-4175ADD27F5D}|Biblioteca\\Biblioteca.csproj|c:\\users\\denis\\source\\repos\\biblioteca\\biblioteca\\elemlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0D832D0-39DD-400F-BD9E-4175ADD27F5D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\elemlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Biblioteca\\Biblioteca\\.gitignore",
+              "RelativeDocumentMoniker": "Biblioteca\\.gitignore",
+              "ToolTip": "C:\\Users\\denis\\source\\repos\\Biblioteca\\Biblioteca\\.gitignore",
+              "RelativeToolTip": "Biblioteca\\.gitignore",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-12T06:23:11.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListaMembri.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Biblioteca\\Biblioteca\\ListaMembri.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\ListaMembri.cs",
+              "ToolTip": "C:\\Users\\denis\\source\\repos\\Biblioteca\\Biblioteca\\ListaMembri.cs",
+              "RelativeToolTip": "Biblioteca\\ListaMembri.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T06:13:24.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICompare.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Biblioteca\\Biblioteca\\ICompare.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\ICompare.cs",
+              "ToolTip": "C:\\Users\\denis\\source\\repos\\Biblioteca\\Biblioteca\\ICompare.cs",
+              "RelativeToolTip": "Biblioteca\\ICompare.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T06:13:22.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ElemList.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Biblioteca\\Biblioteca\\ElemList.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\ElemList.cs",
+              "ToolTip": "C:\\Users\\denis\\source\\repos\\Biblioteca\\Biblioteca\\ElemList.cs",
+              "RelativeToolTip": "Biblioteca\\ElemList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T06:12:30.75Z",
+              "EditorCaption": ""
             }
           ]
         }
