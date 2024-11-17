@@ -401,6 +401,15 @@ FodyWeavers.xsd
 *.msm
 *.msp
 
+*.pdb
+*.cache
+*.suo
+*.wsuo
+*.dll
+*.exe
+*.futdcache.v2
+*.dtbcache.v2
+
 # JetBrains Rider
 *.sln.iml
 /Biblioteca/obj/project.nuget.cache
@@ -416,3 +425,4 @@ FodyWeavers.xsd
 /Biblioteca/obj/Debug/net6.0/Biblioteca.csproj.AssemblyReference.cache
 /.vs/VSWorkspaceState.json
 /.vs/Biblioteca/DesignTimeBuild/.dtbcache.v2
+/.vs/Biblioteca/v17/.futdcache.v2

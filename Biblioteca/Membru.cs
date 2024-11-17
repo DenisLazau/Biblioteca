@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Biblioteca
+﻿namespace Biblioteca
 {
-    public class Membru: ICompare<K>
+    public class Membru
     {
         public Guid Id
         { get; set; }
@@ -26,11 +20,6 @@ namespace Biblioteca
             Nume = nume;
             Telefon = telefon;
             Adresa = adresa;
-        }
-
-        public bool Compara(K id)
-        {
-            throw new NotImplementedException();
         }
     }
 }

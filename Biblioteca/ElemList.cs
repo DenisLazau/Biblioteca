@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Biblioteca
+﻿namespace Biblioteca
 {
     public class ElemList<T, K> where T : ICompare<K>
     {
@@ -12,6 +6,7 @@ namespace Biblioteca
 
         public ElemList()
         {
+            lista = new List<T>();
         }
 
         public void Adauga(T item)
