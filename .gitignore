@@ -426,3 +426,5 @@ FodyWeavers.xsd
 /.vs/VSWorkspaceState.json
 /.vs/Biblioteca/DesignTimeBuild/.dtbcache.v2
 /.vs/Biblioteca/v17/.futdcache.v2
+/.vs/Biblioteca/v17/.futdcache.v2
+/Biblioteca/obj/Debug/net6.0/Biblioteca.AssemblyInfo.cs

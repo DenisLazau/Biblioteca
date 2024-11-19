@@ -17,11 +17,9 @@
             return singleton;
         }
 
-        public void AdaugaCarte(AbstractElem carte)
+        public void AdaugaAbstractElem(AbstractElem carte)
         {
             Adauga(carte);
         }
-
-
     }
 }

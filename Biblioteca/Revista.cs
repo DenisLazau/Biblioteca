@@ -1,14 +1,14 @@
 ﻿namespace Biblioteca
 {
-    public class Carte : AbstractElem
+    public class Revista : AbstractElem
     {
-        public Carte(Guid id, string titlu, string autor)
+        public Revista(Guid id, string titlu, int numar)
             : base(id, titlu)
         {
-            Autor = autor;
+            Numar = numar;
         }
 
-        public string Autor
+        public int Numar
         { get; set; }
 
         public bool Compara(Guid id)

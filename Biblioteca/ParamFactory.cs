@@ -2,8 +2,10 @@
 {
     public abstract class ParamFactory
     {
-        public Guid Id
-        { get; set; }
+        protected ParamFactory(string titlu)
+        {
+            Titlu = titlu;
+        }
 
         public string Titlu
         { get; set; }

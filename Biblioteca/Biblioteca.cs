@@ -11,12 +11,12 @@
             ListaMembri.Instance();
         }
 
-        public bool AdaugaCarte(ParamFactory param)
+        public bool AdaugaElement(ParamFactory param)
         {
             Guid id = Guid.NewGuid();
 
             AbstractElem elem = abstractElemFactory.CreeazaElementConcret(param);
-            catalog.AdaugaCarte(elem);
+            catalog.AdaugaAbstractElem(elem);
             return true;
         }
 

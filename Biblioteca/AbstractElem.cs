@@ -27,5 +27,9 @@
         {
             throw new NotImplementedException();
         }
+
+        public virtual void Accept(IAbstractElemVisitor viz)
+        {
+        }
     }
 }

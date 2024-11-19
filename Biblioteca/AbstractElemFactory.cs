@@ -20,17 +20,19 @@
         public AbstractElem CreeazaElementConcret(ParamFactory paramFactory)
         {
             AbstractElem? elem = null;
+            Guid id = Guid.NewGuid();
 
             switch (paramFactory)
             {
                 case CarteParamFactory carte:
-                    elem = new Carte(carte.Id, carte.Titlu, carte.Autor);
+                    elem = new Carte(id, carte.Titlu, carte.Autor);
+                    break;
+                case RevistaParamFactory revista:
+                    elem = new Revista(id, revista.Titlu, revista.Numar);
                     break;
                 default:
-                    // code block
                     break;
             }
-
 
             return elem!;
 

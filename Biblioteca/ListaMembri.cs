@@ -1,13 +1,11 @@
 ﻿namespace Biblioteca
 {
-    public class ListaMembri
+    public class ListaMembri: ElemList<Membru, Guid>
     {
         private static ListaMembri singleton;
-        private static List<Membru> listaMembri;
 
         private ListaMembri()
         {
-            listaMembri = new List<Membru>();
         }
 
         public static ListaMembri Instance()
@@ -19,9 +17,9 @@
             return singleton;
         }
 
-        public static void AdaugaMembru(Membru carte)
+        public void AdaugaMembru(Membru carte)
         {
-            listaMembri.Add(carte);
+            Adauga(carte);
         }
     }
 }

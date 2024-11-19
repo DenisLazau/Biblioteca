@@ -2,7 +2,7 @@
 {
     public class CarteParamFactory : ParamFactory
     {
-        public CarteParamFactory(string autor)
+        public CarteParamFactory(string autor, string titlu): base(titlu)
         {
             Autor = autor;
         }

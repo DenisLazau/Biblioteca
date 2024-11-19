@@ -1,6 +1,6 @@
 ﻿namespace Biblioteca
 {
-    public class Membru
+    public class Membru : ICompare<Guid>
     {
         public Guid Id
         { get; set; }
@@ -20,6 +20,11 @@
             Nume = nume;
             Telefon = telefon;
             Adresa = adresa;
+        }
+
+        public bool Compara(Guid id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
