@@ -2,8 +2,10 @@
 {
     public interface IAbstractElemVisitor
     {
-        void Visit(AbstractElem elem);
-        void Visit(Carte carte);
-        void Visit(Revista revista);
+        string Visit(AbstractElem carte);
+        string Visit(Carte carte);
+        string Visit(Revista revista);
+        string Visit(ElemCuTaxa elemCuTaxa);
+        string Visit(ElemInSala elemInSala);
     }
 }

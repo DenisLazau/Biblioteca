@@ -4,11 +4,12 @@
     {
         Catalog catalog;
         AbstractElemFactory abstractElemFactory;
+        ListaMembri listaMembri;
         public Biblioteca()
         {
             catalog = Catalog.Instance();
             abstractElemFactory = AbstractElemFactory.Instance();
-            ListaMembri.Instance();
+            listaMembri = ListaMembri.Instance();
         }
 
         public bool AdaugaElement(ParamFactory param)
@@ -25,7 +26,7 @@
             Guid id = Guid.NewGuid();
 
             Membru membru = new Membru(id, nume, telefon, adresa);
-            ListaMembri.AdaugaMembru(membru);
+            listaMembri.AdaugaMembru(membru);
             return true;
         }
     }

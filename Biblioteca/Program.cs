@@ -11,6 +11,9 @@ internal class Program
         CarteParamFactory carteParamFactory = new CarteParamFactory("Juval Lowy", "Righting Software");
         biblioteca.AdaugaElement(carteParamFactory);
 
+        FormatAfisare afisare = new FormatAfisare();
+        //Console.WriteLine(afisare.Visit(biblioteca.GetElement(0)));
+
         Console.WriteLine($"Hello, World!, {biblioteca}");
     }
 }

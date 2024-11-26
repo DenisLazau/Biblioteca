@@ -2,16 +2,16 @@
 {
     public class AbstractElem : ICompare<Guid>
     {
-        public AbstractElem(Guid id, string titlu)
+        public AbstractElem(Guid? id, string? titlu)
         {
             Id = id;
             Titlu = titlu;
         }
 
-        public Guid Id
+        public Guid? Id
         { get; set; }
 
-        public string Titlu
+        public string? Titlu
         { get; set; }
 
         public int? IdMembru
