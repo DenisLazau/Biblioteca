@@ -8,7 +8,7 @@ namespace Biblioteca
 {
     public class ElemCuTaxa : AbstractElem
     {
-        public ElemCuTaxa(AbstractElem elem, int taxa) : base(null, null)
+        public ElemCuTaxa(AbstractElem elem, int taxa) : base(new Guid(), null)
         {
             Element = elem;
             Taxa = taxa;

@@ -8,7 +8,7 @@ namespace Biblioteca
 {
     public class ElemInSala : AbstractElem
     {
-        public ElemInSala(AbstractElem elem, bool sala) : base(null, null)
+        public ElemInSala(AbstractElem elem, bool sala) : base(new Guid(), null)
         {
             Element = elem;
             Sala = sala;
