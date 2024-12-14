@@ -16,7 +16,7 @@
 
         public void Actualizeaza(T item, K id)
         {
-            T? elementulGasit = lista.FirstOrDefault(x => x.Equals(id));
+            T? elementulGasit = lista.FirstOrDefault(x => x.Compara(id));
             if (elementulGasit != null)
             {
                 lista.Remove(elementulGasit);
@@ -31,7 +31,7 @@
 
         public T? Cauta(K id)
         {
-            T? elementulGasit = lista.FirstOrDefault(x => x.Equals(id));
+            T? elementulGasit = lista.FirstOrDefault(x => x.Compara(id));
             return elementulGasit;
         }
     }
