@@ -1,8 +1,8 @@
 ﻿namespace Biblioteca
 {
-    public class Retinere
+    public class Retinere: ICompare<Guid>
     {
-        public Retinere(int id, int idMembru, int idCarte, DateTime dataRetinerii)
+        public Retinere(Guid id, Guid idMembru, Guid idCarte, DateTime dataRetinerii)
         {
             Id = id;
             IdMembru = idMembru;
@@ -10,16 +10,25 @@
             DataRetinerii = dataRetinerii;
         }
 
-        public int Id
+        public Guid Id
         { get; set; }
 
-        public int IdMembru
+        public Guid IdMembru
         { get; set; }
 
-        public int IdCarte
+        public Guid IdCarte
         { get; set; }
 
         public DateTime DataRetinerii
         { get; set; }
+
+        public bool Compara(Guid id)
+        {
+            if (IdCarte == id)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

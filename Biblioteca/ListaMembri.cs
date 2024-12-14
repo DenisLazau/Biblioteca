@@ -17,9 +17,20 @@
             return singleton;
         }
 
-        public void AdaugaMembru(Membru carte)
+        public void AdaugaMembru(Membru membru)
         {
-            Adauga(carte);
+            Adauga(membru);
+        }
+
+        public Membru? CautaMembru(Guid id)
+        {
+            Membru? membrulGasit = Cauta(id);
+            return membrulGasit;
+        }
+
+        public void EliminaMembru(Membru membru)
+        {
+            Elimina(membru);
         }
     }
 }

@@ -13,7 +13,11 @@
 
         public bool Compara(Guid id)
         {
-            throw new NotImplementedException();
+            if (Id == id)
+            {
+                return true;
+            }
+            return false;
         }
 
         public override void Accept(IAbstractElemVisitor viz)

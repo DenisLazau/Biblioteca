@@ -21,5 +21,16 @@
         {
             Adauga(carte);
         }
+
+        public AbstractElem? CautaAbstractElem(Guid id)
+        {
+            AbstractElem? membrulGasit = Cauta(id);
+            return membrulGasit;
+        }
+
+        public void EliminaAbstractElem(AbstractElem carte)
+        {
+            Elimina(carte);
+        }
     }
 }

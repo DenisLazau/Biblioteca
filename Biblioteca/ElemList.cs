@@ -13,5 +13,26 @@
         {
             lista.Add(item);
         }
+
+        public void Actualizeaza(T item, K id)
+        {
+            T? elementulGasit = lista.FirstOrDefault(x => x.Equals(id));
+            if (elementulGasit != null)
+            {
+                lista.Remove(elementulGasit);
+                lista.Add(item);
+            }
+        }
+
+        public void Elimina(T item)
+        {
+            lista.Remove(item);
+        }
+
+        public T? Cauta(K id)
+        {
+            T? elementulGasit = lista.FirstOrDefault(x => x.Equals(id));
+            return elementulGasit;
+        }
     }
 }

@@ -2,19 +2,19 @@
 {
     public class AbstractElem : ICompare<Guid>
     {
-        public AbstractElem(Guid? id, string? titlu)
+        public AbstractElem(Guid id, string? titlu)
         {
             Id = id;
             Titlu = titlu;
         }
 
-        public Guid? Id
+        public Guid Id
         { get; set; }
 
         public string? Titlu
         { get; set; }
 
-        public int? IdMembru
+        public Guid? IdMembru
         { get; set; }
 
         public bool Imprumutata
@@ -25,7 +25,11 @@
 
         public bool Compara(Guid id)
         {
-            throw new NotImplementedException();
+            if (Id == id)
+            {
+                return true;
+            }
+            return false;
         }
 
         public virtual void Accept(IAbstractElemVisitor viz)
